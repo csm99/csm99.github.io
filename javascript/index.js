@@ -1,6 +1,7 @@
 $(function () {
 
-    let offsetScroll = Number(getComputedStyle(document.body, "").fontSize.match(/(\d*(\.\d*)?)px/)[1]) * 5;
+    $('.header').hide();
+    $('.header-movil').hide();
 
     $('.btn-sobre-mi').on('click', function () {
         $('.btn-menu').removeClass('open');
@@ -66,8 +67,6 @@ $(function () {
         });
     }
 
-    $('.header').hide();
-    $('.header-movil').hide();
 
     $('#nav-icon3').click(function(){
         $(this).toggleClass('open');
