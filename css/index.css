@@ -232,6 +232,11 @@ h2{
 }
 
 @media screen and (max-device-width: 425px) {
+
+    body{
+        font-size: 3rem;
+    }
+
     .btns{
         display: grid;
         align-items: center;
