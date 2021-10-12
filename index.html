@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/material-icons.css">
     <script src="./javascript/jquery-3.6.0.min.js"></script>
     <script src="./javascript/jquery-ui.min.js"></script>
+    <script src="./javascript/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./javascript/index.js"></script>
 </head>
 <body>
@@ -40,9 +42,15 @@
                 <span class="nombre">Carlos</span>
                 <span class="apellidos">Sánchez Muñoz</span>
             </div>
-            <div class="btns">
-                <div class="btn btn-sobre-mi">Descubre más sobre mí</div>
-                <div class="btn btn-contacto">Contacta conmigo</div>
+            <div id="typed-area">
+                <span id="typed"></span>
+            </div>
+            <div class="flecha">
+                <div class="arrow btn-sobre-mi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
         <div class="card" id="sobre-mi">
@@ -60,9 +68,12 @@
                     <img class="imagen" src="./images/yo.jpg" alt="">
                 </div>
             </div>
-            <div class="btn-next btns">
-                <div class="btn btn-experiencia">Ver experiencia</div>
-                <div class="btn btn-contacto">Contacta conmigo</div>
+            <div class="flecha">
+                <div class="arrow btn-experiencia">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
         <div class="card" id="experiencia">
@@ -85,8 +96,12 @@
                     </div>
                 </div>
             </div>
-            <div class="btns">
-                <div class="btn btn-formacion">Ver formación</div>
+            <div class="flecha">
+                <div class="arrow btn-formacion">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
         <div class="card" id="formacion">
@@ -106,6 +121,13 @@
                         <span class="puesto">C1 English Level (Cambridge Advanced English Test)</span>
                         <span class="institucion"><span class="material-icons">school</span>Cambridge University</span>
                     </div>
+                </div>
+            </div>
+            <div class="flecha">
+                <div class="arrow btn-contacto">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -132,6 +154,22 @@
                 </div>
             </div>
         </div>
+        <div class="btns">
+            <div class="btn inicio">Volver arriba</div>
+        </div>
     </div>
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Desarrollador de software', 'Ingeniero informático', 'Resuelvo problemas', 'Programador', 'Trabajador'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            cursorChar: '_',
+            shuffle: true,
+            smartBackspace: false,
+            loop: true
+        });
+
+    </script>
 </body>
 </html>
